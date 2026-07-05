@@ -1,0 +1,10 @@
+<!--
+  Bloque añadido a C:\Program Files (x86)\ossec-agent\ossec.conf
+  (justo antes de </ossec_config>) para que el agente Wazuh
+  recolecte la telemetría del canal de Sysmon.
+  Tras editar: Restart-Service WazuhSvc
+-->
+<localfile>
+  <location>Microsoft-Windows-Sysmon/Operational</location>
+  <log_format>eventchannel</log_format>
+</localfile>

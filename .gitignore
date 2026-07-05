@@ -1,0 +1,32 @@
+# Secretos y credenciales — NUNCA subir
+*.env
+.env
+*.key
+*.pem
+*.pfx
+secrets.*
+credentials.*
+
+# Config real de Sysmon (trabajo de terceros, se descarga aparte)
+sysmonconfig-export.xml
+sysmonconfig*.xml
+
+# Archivos grandes de VMs / instaladores
+*.ova
+*.iso
+*.vmdk
+*.vmx
+*.msi
+*.zip
+
+# Python / notebooks
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+venv/
+.venv/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
